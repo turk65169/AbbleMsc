@@ -7,34 +7,34 @@ from pyrogram import filters
 load_dotenv()
 
 
-_API_ID = getenv("API_ID", "")
+_API_ID = getenv("API_ID", "30527441")
 API_ID = int(_API_ID) if _API_ID.isdigit() else 0
 if not API_ID:
     raise SystemExit("[ERROR] - API_ID is not set. Please set it in your .env file.")
-API_HASH = getenv("API_HASH", None)
+API_HASH = getenv("API_HASH", "5d5328f4556130c7f5c6055d7a703bc2")
 if not API_HASH:
     raise SystemExit("[ERROR] - API_HASH is not set. Please set it in your .env file.")
 
 # Get your token from @BotFather on Telegram.
-BOT_TOKEN = getenv("BOT_TOKEN", None)
+BOT_TOKEN = getenv("BOT_TOKEN", "8284340154:AAH07G9K1e6Lb3LbmTYm9kZj51KlYqVwses")
 if not BOT_TOKEN:
     raise SystemExit("[ERROR] - BOT_TOKEN is not set. Please set it in your .env file.")
-BOT_USERNAME = getenv("BOT_USERNAME", None)
+BOT_USERNAME = getenv("BOT_USERNAME", "@Appppllw")
 # Get your mongo url from cloud.mongodb.com
-MONGO_DB_URI = getenv("MONGO_DB_URI", None)
+MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://mongoguess:guessmongo@cluster0.zcwklzz.mongodb.net/?retryWrites=true&w=majority")
 if not MONGO_DB_URI:
     raise SystemExit("[ERROR] - MONGO_DB_URI is not set. Please set it in your .env file.")
 
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 19000))
 
 # Chat id of a group for logging bot's activities
-_LOGGER_ID = getenv("LOGGER_ID", "")
+_LOGGER_ID = getenv("LOGGER_ID", "-1003695016820")
 LOGGER_ID = int(_LOGGER_ID) if _LOGGER_ID.lstrip('-').isdigit() else 0
 if not LOGGER_ID:
     raise SystemExit("[ERROR] - LOGGER_ID is not set. Please set it in your .env file.")
 
 
-_OWNER_ID = getenv("OWNER_ID", "")
+_OWNER_ID = getenv("OWNER_ID", "6143754072")
 OWNER_ID = int(_OWNER_ID) if _OWNER_ID.isdigit() else 0
 if not OWNER_ID:
     raise SystemExit("[ERROR] - OWNER_ID is not set. Please set your own Telegram ID in .env file.")
@@ -50,8 +50,8 @@ UPSTREAM_REPO = getenv("UPSTREAM_REPO", None)
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "Master")
 GIT_TOKEN = getenv("GIT_TOKEN", None)
 
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/tr_telegrammarket")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/goygoy_chat")
 
 # Set this to True if you want the assistant to automatically leave chats after an interval
 AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", False))
@@ -73,7 +73,7 @@ TG_VIDEO_FILESIZE_LIMIT = int(getenv("TG_VIDEO_FILESIZE_LIMIT", 1073741824))
 
 
 
-STRING1 = getenv("STRING_SESSION", None)
+STRING1 = getenv("STRING_SESSION", "BQHRz9EAvkZsg7mO7JgRiT094Ck-AhQXcwAqLGLnc_jVVXemd2siGsw0TSzcsuyQrM_p97iDBTjCwRZYwkwE9yoIyNXC4g6B78YXTKa3P6TQrfADF48DlviRYQLzvtM3eemnB3LSQI5egu01xBfFeR0uClgOkGZiKAl9KNB5q-qEwL8kHtM3wV66qWJavFLeIpYCCnwVn_kQrdWcgZTOxlJ327D54Qlwz-BfDWNL2e7bRceFe5r76yChC0kcoYGw0Nd2UksqjhDJqbJbbEE0k8wBSPn_O7QKci6n_gxC4MxH4Ekxo9RlBKxF9jJ5eGtbRdY2smIKaDBYiP1z0xpWj8Rtt0W2ZwAAAAG3WPv4AA")
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
