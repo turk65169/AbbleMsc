@@ -47,6 +47,7 @@ async def download_song(link: str) -> str:
         'nocheckcertificate': True,
         'quiet': True,
         'no_warnings': True,
+        'extractor_args': {'youtube': ['player_client=android']}
     }
     try:
         def extract():
@@ -86,6 +87,7 @@ async def download_video(link: str) -> str:
         'quiet': True,
         'no_warnings': True,
         'merge_output_format': 'mkv',
+        'extractor_args': {'youtube': ['player_client=android']}
     }
     try:
         def extract():
@@ -413,3 +415,4 @@ class YouTubeAPI:
             logger = LOGGER("BrokenAPI/Youtube.py")
             logger.error(f"❌ Download failed: {e}")
             return None, False
+
